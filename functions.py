@@ -27,3 +27,39 @@ is_keyword("False")
 # число, строка, булевый, None, список, кортеж, множество, словарь
 # пример: get_type("что-то") возвращает "Это строка."
 # пример2: get_type(42) возвращает "Это словарь."
+def get_type(obj):
+    if isinstance(obj, bool):
+        print("Это это логическое выражение")
+        return None
+
+    elif isinstance(obj, int) or isinstance(obj, float) or isinstance(obj, complex):
+        print("Это число")
+        return None
+
+    elif isinstance(obj, str):
+        print("Это строка")
+        return None
+
+    elif isinstance(obj, NoneType):
+        print("Это NoneType")
+        return None
+
+    elif isinstance(obj, list):
+        print("Это список")
+        return None
+
+    elif isinstance(obj, tuple):
+        print("Это кортеж")
+        return None
+
+    elif isinstance(obj, set):
+        print("Это множество")
+        return None
+
+    elif isinstance(obj, dict):
+        print("Это словарь")
+        return None
+
+    else:
+        print("Это что-то непонятное")
+        return None
